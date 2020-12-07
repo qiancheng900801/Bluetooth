@@ -15,8 +15,8 @@
   button.addEventListener('click', function () {
     navigator.bluetooth.requestDevice({
       filters: [{
-        services: ['battery_service']
-        // services: ['heart_rate']
+        // services: ['battery_service']
+        services: ['heart_rate']
       }]
     }).then(device => {
       console.log(11);
